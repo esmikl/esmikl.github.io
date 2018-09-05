@@ -1,14 +1,109 @@
-<!doctype html>
-<html lang="en">
-	<head>
-	  <meta charset="utf-8">
-	  <title>Emily Mikl Portfolio</title>
-	  <base href="/">
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>ImagiWeb Design</title>
+        <meta name="description" content="ImagiWeb Website Design">
+        <meta name="keywords" content="websites, web design, ImagiWeb">
+        <meta name="author" content="Emily Mikl">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/mobile.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+       
+    </head>
 
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="icon" type="image/x-icon" href="favicon.ico">
-	</head>
-	<body>
-	  	<app-root></app-root>
-	</body>
+
+    
+    <body>
+        <div id="blanket">
+            <img src="images/whiteLightBulb.png" id="lightBulb">
+            <a href="#">Enter</a>
+        </div>
+
+        <div id="main">
+            <header>
+                <h1>ImagiWeb Design</h1>
+            </header>
+            
+            <nav id="topNav">
+                <ul>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="banner heading" data-crossfade-start="images/Bulbs.jpg" data-crossfade-end="images/BulbsBlurred.jpg">
+              <h1 class="top">It all starts</h1>
+              <h1 class="middle">with a</h1>
+              <img src="images/brightidea.png" alt="Bright Idea">
+            </div>
+                
+            <section id="welcome">
+                <h1>Welcome</h1>
+                <p>I'm glad you're here! I specialize in fully-functional websites, graphic design, and great customer service. I believe that an attractive website tells the world that you mean business.</p>
+                <p><a href="#" class="contact">Contact</a> me today for availability!</p>
+            </section>
+
+            <div id="services">
+                <h1>Services</h1>
+                <a href="#"><img src="images/webIcon.png" alt="Web design icon." data-attr="webIcon"></a>
+                <a href="#"><img src="images/graphicIcon.png" alt="Graphic design icon." data-attr="graphicIcon"></a>
+                <a href="#"><img src="images/wpIcon.png" alt="WordPress icon." data-attr="wpIcon"></a>
+
+                <section class="webIcon">
+                    <h2>Web Design</h2>
+                    <p>Need a website? Or maybe your current website is in need of an overhaul?<br> I can take you through the entire process from design to implementation!<br> It all starts with a bright idea...</p>
+                </section>
+                
+                <section class="graphicIcon">
+                    <h2>Graphic Design</h2>
+                    <p>I offer graphic design services for your website or print materials.<br> No job too large or too small!</p>
+                </section>
+                
+            </div>
+            
+            <section id="mobileServices">
+                <h1>Services</h1>
+                    <a href="#"><img src="images/webIcon.png" alt="Web design icon." data-attr="webIcon"></a>
+                    <section class="webIcon">
+                        <h2>Web Design</h2>
+                        <p>Need a website? Or maybe your current website is in need of an overhaul?<br> I can take you through the entire process from design to implementation!<br> It all starts with a bright idea...</p>
+                    </section>
+                
+                    <a href="#"><img src="images/graphicIcon.png" alt="Graphic design icon." data-attr="graphicIcon"></a>
+                    <section class="graphicIcon">
+                        <h2>Graphic Design</h2>
+                        <p>I offer graphic design services for your website or print materials.<br> No job too large or too small!</p>
+                    </section>
+                </section>
+            
+            <section id="pricing">
+                <h1>Pricing</h1>
+                <p>Just like when buying a car, what you pay depends on what you want. A standard, basic model will cost less than a tricked-out posh car, so I will charge accordingly for your project. That's what the free initial consulation is for, so contact me today to get an estimate for your project!</p>
+            </section>
+
+            <section id="about">
+                <h1>About Me</h1>
+                <img src="images/pic.png" alt="Photo of Emily Mikl">
+                <p>I have 13 years professional experience as a desktop publisher/graphic designer, and will graduate in December with an Associates Degree in IT-Software Development. I live in Bloomer, Wisconsin, about 25 minutes north of Eau Claire, with my husband and three boys. I started taking on website projects to earn some extra money while in school to help provide for my family, and really love what I do!</p>
+            </section>
+            
+        </div> <!--end main-->
+        
+        
+        <footer>
+            <small>Copyright&copy; 2015 ImagiWeb Design, <a href="mailto:info@imagiwebdesign.com">Emily Mikl</a>. This website was hand-coded and designed by me!</small>
+            <a href="https://www.facebook.com/imagiwebdesign" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+            <a href="http://www.linkedin.com/pub/emily-mikl/a3/b4b/7b6" target="_blank"><img src="images/linkedin.png" alt="Linked In icon"></a>
+            
+        </footer>
+        
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/crossfade.jquery.js"></script>
+        
+        
+    </body>
 </html>
