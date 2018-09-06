@@ -1,0 +1,74 @@
+header{
+    background-color: rgba(0,0,0,0.6);
+    background-image: url(../images/imagiWebLogo_white_horizontal.png);
+    background-repeat: no-repeat;
+    background-position: 12%;
+    height: 100px;
+    padding-bottom: 15px;
+    padding-left: 50%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+
+    & > h1 {
+        text-indent: -9999px;
+    }
+}
+
+nav {
+    /*background-color: rgba(0,0,0,0.9);*/
+    height: 80px;
+    margin: auto;
+    width: 100%;
+
+    ul {
+        list-style: none;
+        margin: auto;
+        padding: 0;
+        position: relative;
+        left: 29%;
+        text-align: center;
+
+        li {
+            font-family: Lato, sans-serif;
+            display: block;
+            float: left;
+            margin-right: 30px;
+            margin-top: 20px;
+            text-align: center;
+            width: 111px;
+
+            a {
+                border: 1px solid #FFF;
+                color: #FFF;
+                display: block;
+                font-weight: 200;
+                padding: 10px;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: 100%;
+                
+                &:hover, &:focus {
+                    border: 1px solid #253273;
+                    color: #253273;
+                    background-color: #ffffd1;
+                    -webkit-transition: 0.1s ease-out; 
+                    -moz-transition: 0.1s ease-out;
+                }
+            }
+        }
+    }
+
+    &.topNav {
+        position: fixed;
+        top: 15px;
+        left: 42%;
+        z-index: 2000;
+
+        li {
+            margin-left: 0%;
+        }
+    }
+}

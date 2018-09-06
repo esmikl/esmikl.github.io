@@ -1,0 +1,253 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #253273;
+    text-align: center;
+}
+
+h1 {
+    font-family: Lato, sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 4em;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.blanket {
+    display: none;
+    background-image: radial-gradient(circle at 50% 50%, rgba(37, 50, 113, 0.9) 3%, rgba(37, 50, 113, 0.9) 2%, #000 14%, #000 100%);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 3000;
+    top: -442px;
+    overflow: hidden;
+
+    img {
+        width: 100px;
+        position: relative;
+        top: 43%;
+    }
+
+    a {
+        border: 1px solid #FFF;
+        color: #FFF;
+        display: none;
+        font-weight: 200;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 111px;
+        position: absolute;
+        top: 655px;
+        left: 47.8%;
+
+        &:hover, &:focus {
+            border: 1px solid #253273;
+            color: #253273;
+            background-color: #ffffd1;
+            -webkit-transition: 0.1s ease-out; 
+            -moz-transition: 0.1s ease-out;
+        }
+    }
+}
+    
+
+.banner {
+	position: relative;
+	color: white;
+	margin-bottom: 50px;
+	height: 900px;
+	background: #333;
+    text-align: center;
+    overflow: hidden;
+
+    h1 {
+        position: absolute;
+        top: 33%;
+        left: 0;
+        width: 100%;
+        font-size: 4.5em;
+        margin: 0;
+        text-align: center;
+        text-shadow: 0px 2px 6px #000;
+        z-index: 10;
+
+        &.middle {
+            top: 51%;
+        }
+    }
+
+    img {
+        position: relative;
+        z-index: 11;
+        top: 62%;
+    }
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 60px 40px;
+
+    p {
+        width: 65%;
+        position: relative;
+        margin: auto;
+    }
+}
+
+#welcome {
+    padding: 10px 0px 80px;
+}
+
+#pricing {
+    padding: 60px 40px;
+    background-color: #FFFFd1;
+}
+
+#services {
+    text-align: center;
+    background-color: #253273;
+    padding: 60px 40px;
+    color: #ffffd1;
+    text-align: center;
+}
+
+#mobileServices {
+    display: none;
+}
+
+#services img {
+    margin-right: -5px;
+    width: 300px;
+}
+
+#services > .webIcon, #services > .graphicIcon, #services > .wpIcon {
+    display: none;
+    padding: 20px;
+}
+
+#about p {
+    width: 70%;
+}
+
+small {
+    position: relative;
+    top: -20px;
+    margin-right: 20px;
+}
+
+/*Styling for web portfolio elements*/
+.container {
+    background-color: #253273;
+    color: #FFF;
+    padding-top: 200px;
+    overflow: auto;
+}
+
+.cbp-so-side-right img, .cbp-so-side-left img {
+    border-radius: 10px;
+    opacity: 0.5;
+    width: 100%;
+}
+
+.cbp-so-section {
+    margin-bottom: 4em;
+}
+
+.intro {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+article p {
+    width: 100%;
+}
+
+#graphicDesignPortfolio {
+    margin-bottom: 40px;
+}
+
+.thumbs {
+    margin: auto;
+}
+
+.thumbs a {
+    padding: 10px;
+}
+
+.thumbs img {
+    width: 300px;
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.guidecover {
+    opacity: .5;
+}
+
+/*contact form*/
+
+#contact > h1 {
+    margin-top: 100px;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+}
+
+label {
+    float: left;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+input {
+    width: 430px;
+}
+
+#submit {
+    width: 100px;
+    font-size: 1.2em;
+}
+
+#name, #contactEmail {
+    height: 35px;
+    margin-left: -44px;
+    font-family: Lato;
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+#message {
+    width: 500px;
+    height: 300px;
+    margin-top: 5px;
+    font-family: Lato;
+    font-weight: 100;
+    font-size: 16px;
+}
