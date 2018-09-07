@@ -1,34 +1,28 @@
 header{
     background-color: rgba(0,0,0,0.6);
-    background-image: url(../images/imagiWebLogo_white_horizontal.png);
-    background-repeat: no-repeat;
-    background-position: 12%;
-    height: 100px;
-    padding-bottom: 15px;
-    padding-left: 50%;
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     z-index: 1000;
 
-    & > h1 {
-        text-indent: -9999px;
+    & > a {
+        display: block;
+        text-align: left;
+
+        img {
+            width: 20rem;
+            margin: 1rem 1rem 1rem 5rem;
+        }
     }
 }
 
 nav {
-    /*background-color: rgba(0,0,0,0.9);*/
-    height: 80px;
-    margin: auto;
-    width: 100%;
-
     ul {
         list-style: none;
         margin: auto;
         padding: 0;
         position: relative;
-        left: 29%;
         text-align: center;
 
         li {
@@ -36,7 +30,6 @@ nav {
             display: block;
             float: left;
             margin-right: 30px;
-            margin-top: 20px;
             text-align: center;
             width: 111px;
 
@@ -62,9 +55,9 @@ nav {
     }
 
     &.topNav {
-        position: fixed;
-        top: 15px;
-        left: 42%;
+        position: absolute;
+        top: 2.25rem;
+        right: 5rem;
         z-index: 2000;
 
         li {

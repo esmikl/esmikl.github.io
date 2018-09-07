@@ -30,18 +30,24 @@ p {
 
 .blanket {
     display: none;
-    background-image: radial-gradient(circle at 50% 50%, rgba(37, 50, 113, 0.9) 3%, rgba(37, 50, 113, 0.9) 2%, #000 14%, #000 100%);
+    background-image: radial-gradient(circle at 50% 20%, rgba(37, 50, 113, 0.9) 3%, rgba(37, 50, 113, 0.9) 2%, #000 14%, #000 100%);
     width: 100%;
-    height: 100vh;
+    height: 1500px;
     position: absolute;
     z-index: 3000;
-    top: -442px;
+    top: -400px;
     overflow: hidden;
+
+    div {
+        position: absolute;
+        right: 40%;
+        left: 40%;
+        top: 17%;
+    }
 
     img {
         width: 100px;
-        position: relative;
-        top: 43%;
+        //margin: 19% auto 0;
     }
 
     a {
@@ -53,9 +59,7 @@ p {
         text-decoration: none;
         text-transform: uppercase;
         width: 111px;
-        position: absolute;
-        top: 655px;
-        left: 47.8%;
+        margin: 15% auto 0;
 
         &:hover, &:focus {
             border: 1px solid #253273;
@@ -72,7 +76,7 @@ p {
 	position: relative;
 	color: white;
 	margin-bottom: 50px;
-	height: 900px;
+	height: 32rem;
 	background: #333;
     text-align: center;
     overflow: hidden;
@@ -115,16 +119,16 @@ section {
     }
 }
 
-#welcome {
+.welcome {
     padding: 10px 0px 80px;
 }
 
-#pricing {
+.pricing {
     padding: 60px 40px;
     background-color: #FFFFd1;
 }
 
-#services {
+.services {
     text-align: center;
     background-color: #253273;
     padding: 60px 40px;
@@ -132,21 +136,21 @@ section {
     text-align: center;
 }
 
-#mobileServices {
+.mobileServices {
     display: none;
 }
 
-#services img {
+.services img {
     margin-right: -5px;
     width: 300px;
 }
 
-#services > .webIcon, #services > .graphicIcon, #services > .wpIcon {
+.services > .webIcon, #services > .graphicIcon, #services > .wpIcon {
     display: none;
     padding: 20px;
 }
 
-#about p {
+.about p {
     width: 70%;
 }
 
