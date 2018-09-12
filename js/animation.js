@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $('.logo-link').click(function() {
+        $('html').animate({scrollTop: 0});
+    });
     
     //Hover effects for web design portfolio page
     $('.cbp-so-section').find('img').hover(function () {

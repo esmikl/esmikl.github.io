@@ -7,95 +7,7 @@
         <meta name="keywords" content="websites, web design, ImagiWeb, Eau Claire, Wisconsin">
         <meta name="author" content="Emily Mikl">
         <link rel="stylesheet" href="stylesheets/main.css">
-        <link rel="stylesheet" href="stylesheets/mobile.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
-    </head>
-
-
-    
-    <body>
-        <div class="blanket">
-            <div>
-                <img src="images/whiteLightBulb.png" id="lightBulb">
-                <a href="#">Enter</a>
-            </div>
-        </div>
-
-        <div id="main">
-            <header>
-                <a href="index.html"><img src="images/imagiWebLogo_white_horizontal.png" alt="ImagiWeb Design logo"></a>
-                <nav class="topNav">
-                    <ul>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            
-            <div class="banner heading" data-crossfade-start="images/Bulbs.jpg" data-crossfade-end="images/BulbsBlurred.jpg">
-                <h1>It all starts with a</h1>
-                <img src="images/brightidea.png" alt="Bright Idea">
-            </div>
-                
-            <section class="welcome">
-                
-                <p>I'm glad you're here! I specialize in fully-functional websites, graphic design, and great customer service. I believe that an attractive website tells the world that you mean business.</p>
-                <p><a href="#" class="contact">Contact</a> me today for availability!</p>
-            </section>
-
-            <div class="services">
-                <h1>Services</h1>
-                <a href="#"><img src="images/webIcon.png" alt="Web design icon." data-attr="webIcon"></a>
-                <a href="#"><img src="images/graphicIcon.png" alt="Graphic design icon." data-attr="graphicIcon"></a>
-                <a href="#"><img src="images/wpIcon.png" alt="WordPress icon." data-attr="wpIcon"></a>
-
-                <section class="webIcon">
-                    <h2>Web Design</h2>
-                    <p>Need a website? Or maybe your current website is in need of an overhaul?<br> I can take you through the entire process from design to implementation!<br> It all starts with a bright idea...</p>
-                </section>
-                
-                <section class="graphicIcon">
-                    <h2>Graphic Design</h2>
-                    <p>I offer graphic design services for your website or print materials.<br> No job too large or too small!</p>
-                </section>
-                
-            </div>
-            
-            <section class="mobileServices">
-                <h1>Services</h1>
-                    <a href="#"><img src="images/webIcon.png" alt="Web design icon." data-attr="webIcon"></a>
-                    <section class="webIcon">
-                        <h2>Web Design</h2>
-                        <p>Need a website? Or maybe your current website is in need of an overhaul?<br> I can take you through the entire process from design to implementation!<br> It all starts with a bright idea...</p>
-                    </section>
-                
-                    <a href="#"><img src="images/graphicIcon.png" alt="Graphic design icon." data-attr="graphicIcon"></a>
-                    <section class="graphicIcon">
-                        <h2>Graphic Design</h2>
-                        <p>I offer graphic design services for your website or print materials.<br> No job too large or too small!</p>
-                    </section>
-                </section>
-            
-            <section class="pricing">
-                <h1>Pricing</h1>
-                <p>Just like when buying a car, what you pay depends on what you want. A standard, basic model will cost less than a tricked-out posh car, so I will charge accordingly for your project. That's what the free initial consulation is for, so contact me today to get an estimate for your project!</p>
-            </section>
-
-            <section class="about">
-                <h1>About Me</h1>
-                <img src="images/pic.png" alt="Photo of Emily Mikl">
-                <p>I have 13 years professional experience as a desktop publisher/graphic designer, and will graduate in December with an Associates Degree in IT-Software Development. I live in Bloomer, Wisconsin, about 25 minutes north of Eau Claire, with my husband and three boys. I started taking on website projects to earn some extra money while in school to help provide for my family, and really love what I do!</p>
-            </section>
-            
-        </div> <!--end main-->
-        
-        
-        <footer>
-            <small>Copyright&copy; 2018 ImagiWeb Design, <a href="mailto:emilysmikl@gmail.com">Emily Mikl</a>. This website was designed and developed by me!</small>
-            <a href="https://www.facebook.com/imagiwebdesign" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
-            <a href="http://www.linkedin.com/pub/emily-mikl/a3/b4b/7b6" target="_blank"><img src="images/linkedin.png" alt="Linked In icon"></a>
-        </footer>
-        
         <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -103,6 +15,73 @@
         <script src="js/welcome.js"></script>
         <script src="js/animation.js"></script>
         <script src="js/crossfade.jquery.js"></script>
-        
+    </head>
+    <noscript>
+        <style type="text/css">
+            .main-content {display: none;}
+            .no-script-content {display: initial};
+        </style>
+    </noscript>
+
+    <body>
+        <div class="main-content">
+            <div class="blanket">
+                <div>
+                    <img src="images/whiteLightBulb.png" id="lightBulb">
+                    <a href="#" class="button-link">Enter</a>
+                </div>
+            </div>
+    
+            <div id="main">
+                <header>
+                    <a href="#" class="logo-link"><img src="images/imagiWebLogo_white_horizontal.png" alt="ImagiWeb Design logo"></a>
+                    <nav class="topNav">
+                        <ul>
+                            <li><a href="#" class="button-link">Portfolio</a></li>
+                            <li><a href="#" class="button-link">About Me</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <div class="banner heading" data-crossfade-start="images/Bulbs.jpg" data-crossfade-end="images/BulbsBlurred.jpg">
+                    <h1>It all starts with a</h1>
+                    <img src="images/brightidea.png" alt="Bright Idea">
+                </div>
+                    
+                <section class="welcome">
+                    <h2>Hey There.</h2>
+                    <p>Welcome to my personal website! Let's build something amazing together.</p>
+                </section>
+
+                <section>
+                    <h2>What I Do</h2>
+                </section>
+    
+                <section class="about">
+                    <h1>About Me</h1>
+                    <img src="images/pic.png" alt="Photo of Emily Mikl">
+                    <p>I have 13 years professional experience as a desktop publisher/graphic designer, and will graduate in December with an Associates Degree in IT-Software Development. I live in Bloomer, Wisconsin, about 25 minutes north of Eau Claire, with my husband and three boys. I started taking on website projects to earn some extra money while in school to help provide for my family, and really love what I do!</p>
+                </section>
+                
+            </div> <!--end main-->
+            
+            
+            <footer>
+                <small>Copyright&copy; 2018 ImagiWeb Design, <a href="mailto:emilysmikl@gmail.com">Emily Mikl</a>. This website was designed and developed by me!</small>
+                <a href="https://www.facebook.com/imagiwebdesign" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+                <a href="http://www.linkedin.com/pub/emily-mikl/a3/b4b/7b6" target="_blank"><img src="images/linkedin.png" alt="Linked In icon"></a>
+            </footer>    
+
+        </div>  
+        <div class="no-script-content">
+            <div class="banner heading">
+                <h1>It all starts with a</h1>
+                <img src="images/brightidea.png" alt="Bright Idea">
+            </div>
+            <section class="welcome">
+                <h1>Hey There.</h1>
+                <p>Welcome to my personal website! Let's build something together.</p>
+            </section>
+        </div>  
     </body>
 </html>

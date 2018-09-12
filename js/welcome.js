@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('html').animate({scrollTop: 0});
     $('.banner h1').hide();
     $('.banner img').hide();
     $('body').css({
@@ -6,7 +7,7 @@ $(document).ready(function() {
         overflow: 'hidden'
     });
     $('.blanket').show().animate({top: '0px', bottom: '0px'}, 3000, function () {
-        $(this).find('a').fadeIn(1000).css('display', 'block');
+        $(this).find('a').fadeIn(1000).css('display', 'inline-block');
     });
     $('.blanket a').click(function (e) {
         e.preventDefault();
@@ -23,8 +24,8 @@ $(document).ready(function() {
         }, 700, function () {
             $('.blanket').css({'display' : 'none'});
             //Fade in main heading wording on page load
-            $('.banner h1').fadeIn(1500, function() {
-                $(this).next('img').fadeIn(800);
+            $('.banner h1').fadeIn(800, function() {
+                $(this).next('img').fadeIn(1000);
             });
 
         });
