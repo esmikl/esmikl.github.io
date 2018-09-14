@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0;}
 
@@ -16,6 +22,7 @@ body {
 
 h1, h2, h3, h4 {
     text-align: center;
+    margin: 0 0 3rem 0;
 }
 
 h1 {
@@ -23,10 +30,6 @@ h1 {
     font-weight: 600;
     font-size: 4rem;
     margin-top: 0;
-}
-
-h2 {
-    margin: 0 0 3rem 0;
 }
 
 h3 {
@@ -38,8 +41,46 @@ h4 {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
+}
+
+ul, ol {
+    li {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+hr {
+    border-style: none;
+    border-bottom: 1px solid #CCC;
+}
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+
+    @media @full-breakpoint {
+        width: 75rem;
+    }
+}
+
+.flex-container {
+    display: flex;
+    padding: 2.5rem 11.25rem;
+
+    div {
+        flex: 1;
+        margin-right: 2rem;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            line-height: 2;
+        }
+    }
 }
 
 .button-link {
@@ -79,6 +120,7 @@ p {
         right: 40%;
         left: 40%;
         top: 17%;
+        text-align: center;
     }
 
     img {
@@ -150,99 +192,76 @@ section {
     }
 }
 
+.abilities {
+    h3, h4 {
+        margin: 3rem auto 0;
+    }
 
-/*Styling for web portfolio elements*/
-.container {
-    background-color: #253273;
-    color: #FFF;
-    padding-top: 200px;
-    overflow: auto;
-}
+    blockquote {
+        font-size: 2rem;
+        text-align: center;
+        font-style: italic;
 
-.cbp-so-side-right img, .cbp-so-side-left img {
-    border-radius: 10px;
-    opacity: 0.5;
-    width: 100%;
-}
+        span {
+            font-style: normal;
+            font-size: 1.5rem;
+        }
+    }
 
-.cbp-so-section {
-    margin-bottom: 4em;
-}
+    ul {
+        li {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-.intro {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 100;
-}
+            .score {
+                display: inline-flex;
+                justify-content: flex-end;
+                letter-spacing: 1px;
+                transition: all;
+                transition-duration: 0.25s;
 
-article p {
-    width: 100%;
-}
+                &:hover {
+                    text-shadow: 0 0 7px yellow;
+                    letter-spacing: 2px;
+                }
 
-#graphicDesignPortfolio {
-    margin-bottom: 40px;
-}
+                .glyphicon {
+                    font-family: 'Glyphicons Halflings';
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
 
-.thumbs {
-    margin: auto;
-}
+                .glyphicon-star {
+                    &:before {
+                        content: "\e006";
+                    }
 
-.thumbs a {
-    padding: 10px;
-}
+                    &.filled {
+                        color: darkturquoise;
+                    }
 
-.thumbs img {
-    width: 300px;
-    border-radius: 10px;
-    opacity: .5;
-}
+                    &.gray {
+                        color: #CCC;
+                    }
+                }
 
-.guidecover {
-    opacity: .5;
-}
-
-/*contact form*/
-
-#contact > h1 {
-    margin-top: 100px;
-}
-
-form {
-    width: 600px;
-    margin: auto;
-}
-
-label {
-    float: left;
-    font-size: 1.5em;
-    font-weight: 100;
-    text-align: right;
-    margin-top: 20px;
-    margin-left: 50px;
-}
-
-input {
-    width: 430px;
-}
-
-#submit {
-    width: 100px;
-    font-size: 1.2em;
-}
-
-#name, #contactEmail {
-    height: 35px;
-    margin-left: -44px;
-    font-family: Lato;
-    font-weight: 100;
-    font-size: 1.2em;
-}
-
-#message {
-    width: 500px;
-    height: 300px;
-    margin-top: 5px;
-    font-family: Lato;
-    font-weight: 100;
-    font-size: 16px;
+                .glyphicon-star-empty:before {
+                    content: "\e007";
+                }
+        
+                .circle {
+                    width: .75rem;
+                    height: .75rem;
+                    margin: .2rem;
+        
+                    
+                }
+            }
+        }
+    }
 }
