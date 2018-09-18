@@ -43,6 +43,7 @@ h4 {
 p {
     font-size: 1.2rem;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 ul, ol {
@@ -106,20 +107,19 @@ hr {
 }
 
 .blanket {
-    display: none;
-    background-image: radial-gradient(circle at 50% 20%, rgba(37, 50, 113, 0.9) 3%, rgba(37, 50, 113, 0.9) 2%, #000 14%, #000 100%);
+    background-image: radial-gradient(circle at 50% 50%, rgba(37, 50, 113, 0.9) 3%, rgba(37, 50, 113, 0.9) 2%, #000 14%, #000 100%);
     width: 100%;
-    height: 1500px;
+    height: 100vh;
     position: absolute;
     z-index: 3000;
-    top: -300px;
     overflow: hidden;
 
     div {
+        display: none;
         position: absolute;
         right: 40%;
         left: 40%;
-        top: 17%;
+        top: 45%;
         text-align: center;
     }
 
@@ -262,6 +262,20 @@ section {
                     
                 }
             }
+        }
+    }
+}
+
+.about {
+    padding-top: 0;
+    
+    h3:last-of-type {
+        margin: 3rem auto;
+    }
+    
+    ul {
+        li {
+            margin-bottom: .75rem;
         }
     }
 }

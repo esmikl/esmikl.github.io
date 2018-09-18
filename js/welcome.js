@@ -6,11 +6,12 @@ $(document).ready(function() {
         height: '100vh',
         overflow: 'hidden'
     });
-    $('.blanket').show().animate({top: '0px', bottom: '0px'}, 3000, function () {
+    $('.blanket > div').fadeIn(1500, function () {
         $(this).find('a').fadeIn(1000).css('display', 'inline-block');
     });
     $('.blanket a').click(function (e) {
         e.preventDefault();
+        $(this).parent().hide();
         $('body').css({
             height: 'auto',
             overflow: 'auto'
