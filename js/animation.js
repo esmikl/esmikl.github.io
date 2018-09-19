@@ -1,5 +1,10 @@
 $(document).ready(function () {
-    $('.logo-link').click(function() {
+    $('#fullpage').fullpage({
+        sectionsColor: ['#f2f2f2'],
+        autoScrolling: true,
+        scrollingSpeed: 1000
+    });
+   /* $('.logo-link').click(function() {
         $('html').animate({scrollTop: 0});
     });
     
@@ -37,7 +42,7 @@ $(document).ready(function () {
 
     }); */
     
-    
+    /*
     //Scrolling effect for main heading photo on homepage
     $('.heading').crossfade({
 		threshold: 0.2,
