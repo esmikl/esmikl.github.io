@@ -6,10 +6,10 @@ $(document).ready(function() {
         height: '100vh',
         overflow: 'hidden'
     });
-    $('.blanket img').fadeIn(1500, function () {
+    $('.blanket img').fadeIn(1000, function () {
         $(this).css('display', 'block');
         $('.glow').fadeIn(1000).css('display', 'block');
-        $('.button-link').fadeIn(2000).css('display', 'inline-block');
+        $('.button-link').fadeIn(1100).css('display', 'inline-block');
     });
     $('.blanket a').click(function (e) {
         e.preventDefault();
