@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    var rellax = new Rellax('.rellax');
+
     $.fn.isInView = function() {
         var elementTop = $(this).offset().top;
         var elementBottom = elementTop + $(this).outerHeight();
