@@ -13,7 +13,7 @@
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
         <script src="js/easings.min.js" type="text/javascript"></script>
-        <script src="js/welcome.js" type="text/javascript"></script>
+        <!--<script src="js/welcome.js" type="text/javascript"></script>-->
         <script src="js/animation.js" type="text/javascript"></script>
         <script src="js/crossfade.jquery.js" type="text/javascript"></script>
         <script src="node_modules/rellax/rellax.min.js" type="text/javascript"></script>
@@ -32,36 +32,26 @@
     </noscript>
 
     <body>
-        <!--<div id="fullpage">
-            <div class="section banner" data-crossfade-start="images/Bulbs.jpg" data-crossfade-end="images/BulbsBlurred.jpg">
-                <h1>It all starts with a</h1>
-                <img src="images/brightidea.png" alt="Bright Idea">
-            </div>
-            <div class="section">
-                Section 1
-            </div>
-            <div class="section">
-                Section 2
-            </div>
-        </div>-->
         <div class="main-content">
-            <div class="blanket">
+            <!--<div class="blanket">
                 <div>
                     <img src="images/whiteLightBulb.png" id="lightBulb">
                     <div class="glow"></div>
                     <a href="#" class="button-link">Enter</a>
                 </div>
-            </div>
+            </div>-->
     
             <div id="main">
                 <header>
-                    <a href="#" class="logo-link"><img src="images/imagiWebLogo_white_horizontal.png" alt="ImagiWeb Design logo"></a>
-                    <nav class="topNav">
-                        <ul>
-                            <li><a href="#" class="button-link">Portfolio</a></li>
-                            <li><a href="#" class="button-link">About Me</a></li>
-                        </ul>
-                    </nav>
+                    <div class="container">
+                        <a href="#" class="logo-link"><img src="images/imagiWebLogo_white_horizontal.png" alt="ImagiWeb Design logo"></a>
+                        <nav class="topNav">
+                            <ul>
+                                <li><a href="#" class="button-link">Portfolio</a></li>
+                                <li><a href="#" class="button-link">About Me</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </header>
                 
                 <div class="banner heading" data-crossfade-start="images/Bulbs.jpg" data-crossfade-end="images/BulbsBlurred.jpg">
@@ -69,12 +59,12 @@
                     <img src="images/brightidea.png" alt="Bright Idea">
                 </div>
                     
-                <div class="container">
+                <div class="container column">
                     <section class="welcome">
                         <h2>Hey There.</h2>
-                        <div class="circle rellax" data-rellax-speed="3"></div>
                         <p>Welcome to my personal website! Let's build something amazing together.</p>
                     </section>
+                    <div class="circle left rellax" data-rellax-speed="3"></div>
     
                     <section class="services">
                         <h3>What I Do</h3>
@@ -87,11 +77,12 @@
                     </section>
     
                     <section class="abilities">
+                        <div class="circle right rellax" data-rellax-speed="3.5"></div>
                         <h3>Abilities</h3>
                         <blockquote>The mind that opens to a new idea never returns to its original size.<br> <span>- Albert Einstein</span></blockquote>
                         <hr>
                         <h4>Skills</h4>
-                        <div class="flex-container">
+                        <div class="skills-container">
                             <div>
                                 <ul>
                                     <li>Adobe Creative Suite
@@ -291,7 +282,7 @@
                             <ul>
                                 <li>I am obsessed with "I Love Lucy". (Seriously, ask me anything.)</li>
                                 <li>My love of Lucy has led to a love of all things retro.</li>
-                                <li>I ADORE penguins! They make me happy.</li>
+                                <li>Penguins make me happy.</li>
                                 <li>I have loved baseball since I was little, and am a Milwaukee Brewers fan and Minnesota Twins fan. Yes, both. One is National League and one is American League, so it works.</li>
                                 <li>I am the sole Green Bay Packers survivor in a family of Minnesota Vikings fans.</li>
                                 <li>I'm a metal head.</li>

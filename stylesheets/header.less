@@ -6,32 +6,31 @@ header{
     width: 100%;
     z-index: 1000;
 
-    & > a {
-        display: block;
-        text-align: left;
-
-        img {
-            width: 20rem;
-            margin: 1rem 1rem 1rem 5rem;
-        }
+    .container {
+        align-items: center;
+        padding: 0.5rem;
     }
 }
 
 nav {
+    flex: 1;
+
     ul {
+        display: flex;
         list-style: none;
-        margin: auto;
+        flex-direction: column;
         padding: 0;
-        position: relative;
-        text-align: center;
+        margin: 0;
+
+        @media @large-phone-breakpoint {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
 
         li {
             font-family: Lato, sans-serif;
             font-size: 1rem;
-            display: block;
-            float: left;
-            margin-right: 30px;
-            text-align: center;
+            padding: 0.5rem;
             
             a {
                 display: block;
@@ -40,14 +39,15 @@ nav {
     }
 
     &.topNav {
-        position: absolute;
-        top: 1rem;
-        right: 5rem;
         z-index: 2000;
         overflow: auto;
+    }
+}
 
-        li {
-            margin-left: 0%;
-        }
+.logo-link {
+    flex: 1;
+
+    img {
+        max-width: 20rem;
     }
 }
