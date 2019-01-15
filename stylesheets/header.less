@@ -8,12 +8,17 @@ header{
 
     .container {
         align-items: center;
-        padding: 0.5rem;
+        padding: 1rem;
     }
 }
 
 nav {
-    flex: 1;
+
+    width: 100%;
+
+    @media @tablet-breakpoint {
+        flex: 1;
+    }
 
     ul {
         display: flex;
@@ -22,7 +27,7 @@ nav {
         padding: 0;
         margin: 0;
 
-        @media @large-phone-breakpoint {
+        @media @tablet-breakpoint {
             flex-direction: row;
             justify-content: flex-end;
         }
@@ -45,9 +50,14 @@ nav {
 }
 
 .logo-link {
-    flex: 1;
+    margin: auto;
+
+    @media @tablet-breakpoint {
+        flex: 1;
+    }
 
     img {
         max-width: 20rem;
+        width: 100%;
     }
 }
