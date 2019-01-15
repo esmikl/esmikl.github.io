@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var lightbulb = $('.lightbulb');
-    var range = -500;
+    var range = -1000;
 
     $(window).on('scroll', function() {
         var scrollTop = $(this).scrollTop(),
